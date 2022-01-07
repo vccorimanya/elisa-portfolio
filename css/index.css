@@ -1,0 +1,244 @@
+body{
+  background: linear-gradient(80deg, #FAD7A1 0%, #E96D71 100%);
+  font-family: 'Oxygen', sans-serif;
+}
+
+header{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+nav{
+  display: none;
+}
+
+li{
+  margin-left: .5rem;
+}
+.hero{
+  margin-top: 2.5rem;
+}
+.hero-text {
+  margin-top: 4rem;
+}
+.hello{
+  font-size: 2.6rem;
+  margin: 0;
+}
+
+.name{
+  font-size: 4rem;
+  margin: 0;
+}
+
+.cv{
+  background: #42E2B8;
+  border: 2px solid #0F0A0A;
+  border-radius: 5.625rem;
+  padding: .8rem;
+  width: 103px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  color: #0F0A0A;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+
+/* .hero-image{
+  position: absolute;
+  left: 85px;
+}
+ */
+.purple {
+  background-color: #42E2B8;
+  width: 300px;
+  height: 250px;
+  border-radius: 0% 29% 0% 29% / 0% 29% 0% 29%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* .mermale{
+  background: #8884FF;
+  width: 350px;
+  height: 250px;
+  border-radius: 0% 29% 0% 29% / 0% 29% 0% 29%;
+  top: 190px;
+  left: 41px;
+  z-index: -2;
+  position: absolute;
+} */
+
+.hero-image-container{
+  margin-bottom: 5rem;
+}
+
+
+.instagram{
+  background: #42E2B8;
+  border: 2px solid black;
+  padding: 10px;
+  height: 48px;
+  width: 50px;
+  margin-right: .9rem;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.social{
+  display: flex;
+}
+
+.desc-text{
+  margin-top: 4rem;
+  font-size: 1.4rem;
+  text-align: center;
+}
+.projects-link{
+  text-align: center;
+  font-size: 1.5rem;
+}
+.arrow{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project{
+  margin-top: 4rem;
+}
+
+.project-image-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.iphonex{
+  width: 75px;
+  height: 132px;
+  position: relative;
+  top: 19px;
+  left: 65px;
+}
+
+.macbook{
+  width: 252px;
+  height: 177px;
+}
+
+.project-name{
+  color: aqua;
+  background: black;
+  width: fit-content;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.project-desc{
+  line-height: 1.5rem;
+}
+.links{
+  display: flex;
+  flex-direction: column;
+}
+
+.links a{
+  text-transform: uppercase;
+  text-align: center;
+  border: 2px solid;
+  text-decoration: none;
+  padding: .8rem;
+  border-radius: 1rem;
+  color: black;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(255, 255, 255, .5);
+  border-radius: 8px;
+  border: 2px solid rgba(255,255,255, .4);
+  margin-top: 4rem;
+  padding: 1rem;
+}
+
+.box img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.box-desc{
+  font-weight: 601;
+}
+
+.ceo{
+  font-size: .8rem;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+}
+label{
+  font-weight: 600;
+  padding: 1rem;
+}
+input{
+  padding: .8rem;
+  border: 1px solid #bbbab9;
+  border-radius: 8px;
+}
+
+textarea{
+  border: 1px solid #aba8a8;
+  border-radius: 8px;
+}
+button{
+  margin-top: 1rem;
+  background: aqua;
+  border: 2px solid #000000;
+  padding: .8rem;
+  border-radius: 2rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 4rem;
+}
+footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.copy{
+  text-align: center;
+}
+
+@media  screen and (min-width: 640px){
+  nav{
+    display: initial;
+  }
+
+  ul{
+    display: flex;
+    list-style: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+  }
+
+  .hero-text{
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row-reverse;
+  }
+
+}
