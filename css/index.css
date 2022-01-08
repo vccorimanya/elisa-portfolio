@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Poppins:wght@200;300;400;500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
 body{
   background: linear-gradient(80deg, #FAD7A1 0%, #E96D71 100%);
-  font-family: 'Oxygen', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
 }
 
 header{
@@ -19,16 +23,36 @@ li{
   margin-top: 2.5rem;
 }
 .hero-text {
+  display: flex;
+ /*  align-items: center; */
+  flex-direction: column;
   margin-top: 4rem;
 }
+
+.hero-text-info{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
 .hello{
   font-size: 2.6rem;
+  font-family: 'Oxygen', sans-serif;
+  font-weight: 700;
   margin: 0;
 }
 
 .name{
   font-size: 4rem;
+  font-family: 'Oxygen', sans-serif;
+  font-weight: 700;
   margin: 0;
+}
+.caption{
+  font-size: 16px;
+  font-family: 'Oxygen', sans-serif;
+  font-weight: 400;
+  width: 300px;
 }
 
 .cv{
@@ -45,20 +69,18 @@ li{
   font-weight: 700;
 }
 
-
-/* .hero-image{
-  position: absolute;
-  left: 85px;
-}
- */
 .purple {
+
+  --path: 50% 0, 100% 100%, 0 100%;
+  --border: 5px;
+  box-sizing: border-box;
   background-color: #42E2B8;
   width: 300px;
   height: 250px;
-  border-radius: 0% 29% 0% 29% / 0% 29% 0% 29%;
   display: flex;
   align-items: center;
   justify-content: center;
+ border-radius: 5% 95% 72% 28% / 56% 73% 27% 44%;
 }
 
 /* .mermale{
@@ -75,7 +97,10 @@ li{
 .hero-image-container{
   margin-bottom: 5rem;
 }
-
+.hero-image{
+  width: 241px;
+  height: 241px;
+}
 
 .instagram{
   background: #42E2B8;
@@ -111,23 +136,36 @@ li{
   margin-top: 4rem;
 }
 
+.iphone {
+  display: flex;
+  align-items: flex-start;
+  height: 11rem;
+}
 .project-image-container{
   display: flex;
   align-items: center;
   justify-content: center;
+  position: absolute;
 }
 
 .iphonex{
-  width: 75px;
-  height: 132px;
+  width: 68px;
+  height: 123px;
   position: relative;
   top: 19px;
-  left: 65px;
+  left: 7px;
+  z-index: 4;
 }
 
 .macbook{
-  width: 252px;
-  height: 177px;
+  width: 241px;
+  height: 167px;
+  position: relative;
+  left: -51px;
+}
+
+.marig_lr{
+  margin: 0 1rem;
 }
 
 .project-name{
@@ -157,6 +195,7 @@ li{
   font-weight: 600;
   margin-bottom: 1rem;
 }
+
 
 .box{
   display: flex;
@@ -189,7 +228,7 @@ form{
 }
 label{
   font-weight: 600;
-  padding: 1rem;
+  padding: .5rem;
 }
 input{
   padding: .8rem;
@@ -221,7 +260,22 @@ footer{
   text-align: center;
 }
 
+.hablemos_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hablemos {
+  max-width: 543px;
+
+}
+
 @media  screen and (min-width: 640px){
+  .wraper{
+    margin: 0 8.5rem;
+  }
+
   nav{
     display: initial;
   }
@@ -240,5 +294,43 @@ footer{
     justify-content: space-between;
     flex-flow: row-reverse;
   }
+  .project{
+    display: grid;
+    grid-template: 1fr / 1fr 1fr;
+  }
+  .iphone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: 1 /2 /3 / 3;
+  }
+  .links {
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    grid-area: 2 /1;
+  }
+  .links a{
+    margin-right: 1rem;
+  }
 
+  .box-desc {
+      font-weight: 601;
+      font-size: 34px;
+  }
+
+  .ceo {
+      font-size: 24px;
+  }
+  .hero {
+    margin-top: 0;
+  }
+  .purple {
+    width: 567px;
+    height: 435px;
+  }
+  .hero-image{
+    width: 392px;
+    height: 389px;
+  }
 }
